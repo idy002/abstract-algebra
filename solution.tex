@@ -1,0 +1,96 @@
+\documentclass{article}
+
+\title{Homework}
+\date{2017-09-15}
+\author{Ding Yaoyao, 516030910572}
+
+\begin{document}
+
+	\maketitle
+
+	\section*{Exercise 1-1}
+
+		\subsection*{4}
+
+		\begin{itemize}
+				\item Reflexive: $\phi(a) = \phi(a) \Rightarrow a \sim a$.
+
+				\item Symmetric: $a \sim b \Rightarrow \phi(a) = \phi(b) \Rightarrow \phi(b) = \phi(a) \Rightarrow b \sim a$.
+
+				\item Transitive: If $a \sim b $ and $b \sim c$, then $\phi(a) = \phi(b) = \phi(c)$, which means $a \sim c$.
+		\end{itemize}
+
+		So relation $\sim$is an equivalence relation.
+
+		the partition that a belongs to is $[a] = \{ b \mid \phi(b) = \phi(a) \}$.
+
+		\subsection*{8}
+
+		\begin{itemize}
+				\item Reflexive: $ab=ba \Rightarrow (a,b) \sim (a,b)$.
+
+				\item Symmetric: $(a,b) \sim (c,d) \Rightarrow ad=bc \Rightarrow cb = da \Rightarrow (c,d) \sim (a,b)$.
+
+				\item Transitive: $(a,b) \sim (c,d)$ and $(c,d) \sim (e,f)$ $\Rightarrow$ $\frac{a}{b} = \frac{c}{d} = \frac{e}{f} \Rightarrow (a,b) \sim (e,f)$.
+		\end{itemize}
+
+		So relation $\sim$ on S is an equivalence relation.
+
+	\section*{Exercise 1-2}
+
+		\subsection*{5}
+
+		\begin{itemize}
+
+				\item Closure: If $a,b \in Z$ , then $a \oplus b = a + b - 2 \in Z$.
+
+				\item Associativity: $(a\oplus b)\oplus c = (a + b - 2)\oplus c = (a + b - 2) + c - 2 = a + (b + c - 2) - 2 = a\oplus(b + c - 2) = a \oplus(b\oplus c)$.
+
+				\item Identity: There is an element $e = 2$ in $Z$ such that $e \oplus a = a \oplus e = a $ for all a in $Z$.
+
+				\item Inverse: If a is in $Z$, there is an element $a^{-1} = 4 - a$ such that $a\oplus a^{-1} = a^{-1}\oplus a = 2 = e$.
+
+		\end{itemize}
+
+		Above all, $(Z,\oplus)$ is a group.
+
+		\subsection*{12}
+
+		We have $x^2 = e \Rightarrow x = x^{-1}$ (for all x in G).
+
+		Because $ab = a^{-1}b^{-1} = (ba)^{-1} = ba$, then $G$ is an abelian group.
+
+		\subsection*{13}
+
+		\begin{itemize}
+
+				\item $\Rightarrow$: $ab = ba \Rightarrow (ab)^2 = abab = aabb = a^2b^2$.
+
+				\item $\Leftarrow $: $(ab)^2 = a^2b^2 \Rightarrow abab = aabb \Rightarrow a^{-1}ababb^{-1} = a^{-1}aabbb^{-1} \Rightarrow ba = ab$.
+
+		\end{itemize}
+		\subsection*{16}
+
+		Let $S = \{ a \in G \mid a^3 = e \} $.
+
+		We have two properties:
+
+		\begin{enumerate}
+
+				\item $a \in S \Rightarrow a^{-1} \in S$ 
+
+						Proof: $a \in S \Rightarrow a^3 = e \Rightarrow (a^{-1})^3  = (a^3)^{-1} = e^{-1} = e \Rightarrow a^{-1} \in S$.
+
+				\item $a \in S$ and $a = a^{-1}$ $\Rightarrow $ $a = e$
+
+						Proof: $a \in S \Rightarrow a^3 = e \Rightarrow a^2 = a^{-1}$, we also have $a = a^{-1}$, so $a^2 = a$, which means $a = e$.
+
+		\end{enumerate}
+
+		From property 1, $S$ consists of many pairs like $(a,a^{-1})$. 
+
+		From property 2, there is the only one pair $(e,e^{-1})$ such that $a = a^{-1}$.
+
+		So the number of elements of $S$ is odd. 
+
+\end{document}
