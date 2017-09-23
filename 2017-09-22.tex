@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{titlesec}
+
+\title{Homework}
+\date{2017-09-22}
+\author{Ding Yaoyao, 516030910572}
+
+\begin{document}
+
+	\maketitle
+
+	\section*{Exercise 1-3}
+		\subsection*{5}
+
+		\begin{itemize}
+			\item Closure: If $a,b \in G$, there are $c,d \in G$ such that $a = c^m, b = d^m$. Then $ab=c^md^m=(cd)^m \in G$(Beacuse group $G$ is an abelian group).
+			\item Identity: $e = e^m \in G$.
+			\item Inverse: If $a = b^m \in G$, then $a^{-1} = (b^m)^{-1} = (b^{-1})^m \in G$.
+		\end{itemize}
+
+		Above all, $H \preccurlyeq G$.
+
+		\subsection{6}
+
+		For all $a, b \in gHg^{-1}$, there are $c,d \in H$ such that $a = gcg^{-1}, b = gdg^{-1}$. 
+		
+		Then $a^{-1}b = (gcg^{-1})^{-1}gdg^{-1} = gc^{-1}g^{-1}gdg^{-1} = gc^{-1}dg^{-1}$. 
+		
+		Beacuse $c^{-1}d \in H$, we have $a^{-1}b \in gHg^{-1}$. 
+		
+		Finally, we get $gHg^{-1} \preccurlyeq G$.
+
+		\subsection*{7}
+
+		For all $b, c \in C(a)$, we have $ba = ab$ and $ca = ac$.
+
+		Then $b^{-1}c = (aba^{-1})^{-1}aca^{-1} = ab^{-1}a^{-1}aca^{-1} = ab^{-1}ca^{-1}$, which imply that $ab^{-1}c=b^{-1}ca$, $b^{-1} \in C(a)$.
+
+		Above all, $C(a) \preccurlyeq G$.
+
+		\subsection*{8}
+
+		
+
+		\subsection*{18}
+		\subsection*{19}
+
+\end{document}
+
