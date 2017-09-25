@@ -15,37 +15,65 @@
 		\subsection*{5}
 
 		\begin{itemize}
-			\item Closure: If $a,b \in G$, there are $c,d \in G$ such that $a = c^m, b = d^m$. Then $ab=c^md^m=(cd)^m \in G$(Beacuse group $G$ is an abelian group).
+			\item Closure: If $a,b \in G$, there are $c,d \in G$ such that $a = c^m, b
+				= d^m$. Then $ab=c^md^m=(cd)^m \in G$(Beacuse group $G$ is an abelian
+				group).
 			\item Identity: $e = e^m \in G$.
-			\item Inverse: If $a = b^m \in G$, then $a^{-1} = (b^m)^{-1} = (b^{-1})^m \in G$.
+			\item Inverse: If $a = b^m \in G$, then $a^{-1} = (b^m)^{-1} = (b^{-1})^m
+				\in G$.
 		\end{itemize}
 
 		Above all, $H \preccurlyeq G$.
 
 		\subsection{6}
 
-		For all $a, b \in gHg^{-1}$, there are $c,d \in H$ such that $a = gcg^{-1}, b = gdg^{-1}$. 
-		
-		Then $a^{-1}b = (gcg^{-1})^{-1}gdg^{-1} = gc^{-1}g^{-1}gdg^{-1} = gc^{-1}dg^{-1}$. 
-		
+		For all $a, b \in gHg^{-1}$, there are $c,d \in H$ such that $a = gcg^{-1},
+		b = gdg^{-1}$.
+
+		Then $a^{-1}b = (gcg^{-1})^{-1}gdg^{-1} = gc^{-1}g^{-1}gdg^{-1} =
+		gc^{-1}dg^{-1}$.
+
 		Beacuse $c^{-1}d \in H$, we have $a^{-1}b \in gHg^{-1}$. 
-		
+
 		Finally, we get $gHg^{-1} \preccurlyeq G$.
 
-		\subsection*{7}
+		\subsection*{7}	
 
 		For all $b, c \in C(a)$, we have $ba = ab$ and $ca = ac$.
 
-		Then $b^{-1}c = (aba^{-1})^{-1}aca^{-1} = ab^{-1}a^{-1}aca^{-1} = ab^{-1}ca^{-1}$, which imply that $ab^{-1}c=b^{-1}ca$, $b^{-1} \in C(a)$.
+		Then $b^{-1}c = (aba^{-1})^{-1}aca^{-1} = ab^{-1}a^{-1}aca^{-1} =
+		ab^{-1}ca^{-1}$, which imply that $ab^{-1}c=b^{-1}ca$, $b^{-1} \in C(a)$.
 
 		Above all, $C(a) \preccurlyeq G$.
 
 		\subsection*{8}
-
-		
+			$g \in C(G) \Leftrightarrow \forall a \in G, ga=ag \Leftrightarrow \forall
+			a \in G, g \in C(a) \Leftrightarrow g \in \bigcap_{a \in G}C(a)$, then we
+			have:
+			$$
+				C(G) = \bigcap_{a \in G}C(a)
+			$$
 
 		\subsection*{18}
+
+		\begin{itemize}
+			\item $<m,n> \subseteq <d>$: $a \in <m,n> \Rightarrow \exists k_1, k_2, a
+				= k_1m+k_2n = (k_1\frac{m}{d} + k_2\frac{n}{d})d \Rightarrow a \in <d>$.
+		  \item $<d> \subseteq <m,n>$: By the Euclid theorem, $\exists k_1, k_2, d =
+				k_1m+k_2n$. If $a \in <d>$, we have $a = kd = k(k_1m + k_2n) = (kk_1)m +
+				(kk_2)n$, which means $a \in <m,n>$.
+		\end{itemize}
+		
+		Above all, $<m,n> = <d>$.
+
 		\subsection*{19}
+
+		It's obvious that $m = \pm n$ imply $<m> = <n>$, we only need to prove $<m>
+		= <n> \Rightarrow m = \pm n$.
+
+		If $<m> = <n>$, we have $m \in <m> = <n>$, which means $n \mid m$. We can
+		get $m \mid n$ by the same method. But $n \mid m$ and $m \mid n$ means $m =
+		\pm n$. That's all.
 
 \end{document}
 
