@@ -22,3 +22,7 @@ Student: DingYaoyao
 > Additional: 
 >
 > Proof:If $N = n_1 n_2$, and $gcd(n_1, n_2) = 1$, then $Z_n^{*} \cong Z_{n_1}^{*}\times Z_{n_2}^{*}$.
+
+### 2017-10-13
+
+> 1-6: 5(1)(4), 12, 24, 25
