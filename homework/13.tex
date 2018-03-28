@@ -1,0 +1,58 @@
+\documentclass[draft]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{booktabs}
+
+\title{Homework}
+\date{2017-12-08}
+\author{Ding Yaoyao, 516030910572}
+
+\begin{document}
+
+	\maketitle
+	\section*{Exercise 3-3}
+		\subsection*{9}
+			$$
+				I = \{ (a-2b) + (b+2a)i \mid a, b \in \mathbb{Z} \}
+			$$
+			$$
+				\mathbb{Z}[i]/I = \{ I, i+I, 2i+I, 3i+I, 4i+I \}
+			$$
+		\subsection*{13}
+			Let $z_1, z_2 \in IJ$, it's obvious that $z_1 - z_2 \in IJ$, thus $IJ$ is a
+			subgroup of $R$ on $+$. If $z = \sum x_iy_i \in IJ$ and $t \in R$, then 
+			$$
+			tz = \sum (tx_i)y_i \in IJ \quad \text{ and } \quad zt = \sum x_i(y_it) \in IJ,
+			$$
+			thus $IJ$ is an ideal of $R$.
+
+			If $z = \sum x_iy_i \in IJ$, then $z = \sum x_iy_i = \sum (x_i)' \in I$
+			and $z = \sum x_iy_i = \sum (y_i)' \in J$, then $z \in I\cap J$, thus $IJ
+			\subset I \cap J$.
+		\subsection*{17}
+			\subsubsection*{(1)}
+				$\langle 3 \rangle$.
+			\subsubsection*{(2)}
+				$\langle 30 \rangle$.
+			\subsubsection*{(3)}
+				$\langle 90 \rangle$.
+	\section*{Exercise 3-4}
+		\subsection*{5}
+			If $f$ is the homomorphism from $\mathbb{Z}_4$ to $\mathbb{Z}_{20}$, then
+			we have 
+			$$
+			f(0) = 0 \quad \text{and} \quad f(1) = 1
+			$$
+			Beacuse $f(a+b) = f(a) + f(b)$, we have $f(n) = n$ for $n = 0, 1, 2, 3$.
+			But $f(3+3) = f(3) + f(3) = 6$ and $f(3+3) = f(2) = 2$, so $f$ is not a
+			homomorphism. Thus the homomorphism does not exist.
+
+		\subsection*{7}
+			\subsubsection*{(2)}
+				Similarly with above, there is only one homomorphism:
+				
+				$f(n) = n \quad (n = 0, 1, \dots, 9)$.
+			\subsubsection*{(3)}
+				There is only one homomorphism:$f(n) = n \quad (n = 0, 1, \dots, 11)$.
+\end{document}

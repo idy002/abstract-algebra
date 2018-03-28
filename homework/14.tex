@@ -1,0 +1,111 @@
+\documentclass[draft]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{booktabs}
+
+\title{Homework}
+\date{2017-12-15}
+\author{Ding Yaoyao, 516030910572}
+
+\begin{document}
+
+	\maketitle
+	\section*{Exercise 4-1}
+		\subsection*{5}
+		Beacuse $f$ and $g$ are nonzero polynomials, we have
+		\begin{equation*}
+			\begin{split}
+				f(x) & = a_0+a_1x+a_2x^2+\cdots+a_nx^n	\\
+				g(x) & = b_0+b_1x+b_2x^2+\cdots+b_mx^m,
+			\end{split}
+		\end{equation*}
+		where $a_n \neq 0$ and $b_m \neq 0$. So $deg(f) = n$ and $deg(g) = m$.
+
+		The coefficient of $x^r$ item of $f(x)g(x)$ is 
+		$$
+		c_r = \sum_{i = 0}^{r}a_ib_{r-i}.
+		$$
+		When $r = n+m$, $c_r$ is $a_nb_m$, which is not $0$ beacuse $R$ is an integral
+		domain and $a_n \neq 0, b_m \neq 0$. So $deg(fg) \geq deg(f) + deg(g)$.
+
+		When $r > n + m$, $c_r$ is $0$ beacuse one of $a_i$ and $b_{r-i}$ is $0$.
+		So $deg(fg) \leq deg(f) + deg(g)$. 
+
+		Then when $f(x) \neq 0$ and $g(x) \neq 0$, we have $deg(fg) = deg(f) +
+		deg(g)$.
+
+		When $R$ is not an integral domain, the conclusion doesn't hold. For
+		example, when $R$ is $Z_4$, $f(x) = g(x) = 2$, $deg(f) = deg(g) = 0$ and
+		$deg(fg) = -\inf$.
+	\section*{Exercise 4-3}
+		\subsection*{1}
+			\subsubsection*{(4)}
+				Beacuse $x^3+1 = (x+1)(x^2-x+1) = (x+1)(x^2+x+1)$, thus $\beta \mid \alpha$.
+			\subsubsection*{(6)}
+				If $\alpha = \beta\gamma$, we replace $x$ with $2 \in Z_5[x]$, we can
+				get $\alpha(x = 2) = 0$. But we replace $x$ directly in $\alpha$ we can
+				get $\alpha(x = 2) = 2 \neq 0$. So $\beta \nmid \alpha$.
+		\subsection*{19}
+			Let $R = \mathbb{Z}[\sqrt{-3}]$ and $a = 4, b = 2(1+\sqrt{-3})$. We can
+			get that all the divisors of $a$ are $\{1, 2, 1+\sqrt{-3}, 1-\sqrt{-3},
+			-1, -2, -1-\sqrt{-3}, -1+\sqrt{-3}\}$ and all the divisors of $b$ are $\{
+				1, 2, 1+\sqrt{-3}, -1, -2, -1-\sqrt{-3}\}$. Both $2$ and $1+\sqrt{-3}$
+			are maximal common divisors, but they don't correlate with each other. So
+			$a$ and $b$ have no greatest commom divisor. (The method to get the
+			divisor of $a$ or $b$ is to reduce $\frac{a}{r+s\sqrt{-3}}$ in
+			$\mathbb{C}$ field where $r,s\in\mathbb{Z}$, then we can get the
+			restrictions on $r$ and $s$ and know all the divisors).
+	\section*{Exercise 4-4}
+		\subsection*{1}
+			\subsubsection*{(1)}
+				\begin{itemize}
+					\item $\Rightarrow$:
+					If $d$ is a unit, we have $dd^{-1} = 1$, then 
+					$$
+					\sigma(1) = \sigma(dd^{-1}) \geq \sigma(d) \geq \sigma(d\cdot1) \geq
+					\sigma(1),
+					$$
+					so $\sigma(1) = \sigma(d)$.
+
+					\item $\Leftarrow$:
+					If $\sigma(1) = \sigma(d)$, beacuse $D$ is an Euclidean Domain, we have
+					$$
+						1 = dc + r,
+					$$
+					where $\sigma(r) < \sigma(d)$ or $r = 0$. Beacuse $\sigma(r) \geq
+					\sigma(1) = \sigma(d)$, $r$ must be $0$. Then we have $dc = 1$, which
+					means $d$ is a unit.
+				\end{itemize}
+			\subsubsection*{(2)}
+				For all $d \in D$, we have $\sigma(d) = n = \sigma(1)$, by $(1)$, then
+				$d$ is a unit. Then every element of $D$ has a multiplicative inverse,
+				thus Euclidean Domain $D$ is a field.
+			\subsubsection*{(3)}
+				If $a = 0$, then $a = b = 0$.
+
+				If $a \neq 0$, we have $b = ac$ where $c$ is a unit, then $b \neq 0$.
+				Then we have $\sigma(b) = \sigma(ac) \geq \sigma(a)$. Similarly,
+				$\sigma(a) \geq \sigma(b)$, so $\sigma(a) = \sigma(b)$.
+
+				In conclusion, $a \sim b$ $\Rightarrow$ $a = b = 0$ or $\sigma(a) = \sigma(b)$.
+		\subsection*{7}
+			\subsubsection*{(1)}
+				By the Correspondence Theorem For Rings, any ideal of $D/I$ has the form $J/I$, 
+				where $J$ is an ideal of $D$ containing $I$. Beacuse $D$ is a PID, $J =
+				(a)$ where $a \in D$. Then $J/I = (a)/I = (a+I)$, which means all the 
+				ideals of $D/I$ are principal.
+
+				$D/I$ is an integral domain iff $I$ is a prime ideal of $D$, but it's not
+				necessary. For example, let $D$ be $\mathbb{Z}$ and $I$ be $(6)$, then
+				$D/I$ is not an integral beacuse $(2+I)(3+I) = I$ where $(2+I)\neq I$ and
+				$3+I\neq I$.
+			\subsubsection*{(2)}
+				Similar with $(1)$, any ideal of $D/I$ has the form that $J/I$, where
+				$J$ is an ideal of $D$ containing $I$. Beacuse $D$ is a PID, we can
+				assume $I = (a)$ and $J = (b)$. Beacuse we have $I \subseteq J$, then $b
+				\mid a$. Beacuse $D$ is also a UFD, then $a$ has finite divisor that
+				don't correlate with each other. Then there are finite number of $b$
+				that don't correlate with each other, which means there are finite
+				ideals of $D/I$.
+\end{document}
